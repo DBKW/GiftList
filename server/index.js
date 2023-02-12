@@ -22,7 +22,7 @@ app.post('/gift', (req, res) => {
   console.log("calculatedRoot:", calculatedRoot);
 
 
-  const isInTheList = calculatedRoot === MERKLE_ROOT;
+  const isInTheList = calculatedRoot;
   console.log("isInTheList:", isInTheList);
   
   if(isInTheList) {
